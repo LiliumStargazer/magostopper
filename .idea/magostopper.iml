@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/magoStopper.build" />
       <excludeFolder url="file://$MODULE_DIR$/magoStopper.dist" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="jdk" jdkName="Poetry (magostopper)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
