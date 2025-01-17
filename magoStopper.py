@@ -1,26 +1,26 @@
 import base64
 
 code = base64.b64encode(b"""
-import sys
-import ctypes
+# import sys
+# import ctypes
 import psutil
 import pygetwindow as gw
 from pynput import mouse, keyboard
 import time
-
-# Function to check if the program is running as an administrator
-def is_admin():
-    return ctypes.windll.shell32.IsUserAnAdmin() != 0
-
-# Function to restart the script as an administrator if it is not already
-def run_as_admin():
-    if not is_admin():
-        # Use ShellExecute to run the script as an administrator
-        ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, sys.argv[0], None, 1)
-        sys.exit()
-
-# Run this function at the start of the program
-run_as_admin()
+# 
+# # Function to check if the program is running as an administrator
+# def is_admin():
+#     return ctypes.windll.shell32.IsUserAnAdmin() != 0
+# 
+# # Function to restart the script as an administrator if it is not already
+# def run_as_admin():
+#     if not is_admin():
+#         # Use ShellExecute to run the script as an administrator
+#         ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, sys.argv[0], None, 1)
+#         sys.exit()
+# 
+# # Run this function at the start of the program
+# run_as_admin()
 
 # Target window title
 target_window_title = "Mago4"
